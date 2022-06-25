@@ -1,0 +1,12 @@
+<article class="post">
+      <div class="title">
+        <a href="/post/{{id}}">{{title}}</a>
+        {{!-- <span>({{format_url post_url}})</span> --}}
+      </div>
+      <div class="body">
+        {{post_text}}
+      </div>
+      <div class="meta">
+        <h4>Posted By {{user.username}} on {{format_date created_at}}</h4>
+      </div>
+    </article>
