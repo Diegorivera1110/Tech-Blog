@@ -1,7 +1,7 @@
 # The Tech Blog
 
   ## Description
-  This project is a CMS-style blog site where the tech community can write and contribute to other posts. The user is required to signup in order to use. This project was created following the MVC paradigm and is deployed through heroku. (https://murmuring-waters-07175.herokuapp.com/)
+  This project is a CMS-style blog site where the tech community can write and contribute to other posts. The user is required to signup in order to use. This project was created following the MVC paradigm and is deployed through Heroku. (https://murmuring-waters-07175.herokuapp.com/)
 
   ## Table of Contents
   - [Installation](#installation)

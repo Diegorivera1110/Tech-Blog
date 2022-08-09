@@ -64,13 +64,18 @@ router.get("/:id", (req, res) => {
 });
 
 
-router.post("/", sessAuth, (req, res) => {
+router.post("/", (req, res) => {
+  console.log('POSTING')
+  console.log(req.session);
+  console.log("THIS IS REQ.BODY", req.body);
     Post.create({
       title: req.body.title,
-      post_text: req.body.post_url,
+      post_text: req.body.post_text,
       user_id: req.session.user_id,
     })
-      .then(dbPostData => res.json(dbPostData))
+      .then(dbPostData => {
+        console.log(dbPostData)
+        res.json(dbPostData)}) 
       .catch((err) => {
         console.log(err);
         res.status(500).json(err);
